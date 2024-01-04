@@ -1,0 +1,42 @@
+.background {
+    background-color: white;
+    height: 90vh;
+    width: 100%;
+  
+  }
+  
+    .container{
+        height: 300px;
+        width: 1000px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 0 15px rgb(19, 18, 18);
+        margin-left: 270px;
+     
+        }
+        .searchicon{
+          height: 18px;
+          margin-left: -23px;
+        }
+        .search{
+          margin-left: 950px;
+          margin-top: 20px;
+          width:300px;
+        }
+  .title{
+    margin-left: 320px;
+    color: rgb(10, 10, 10);
+  }
+ td,th{
+    padding-left: 60px;
+    padding-right: 60px;
+   
+ }
+hr{
+    width:300px;
+}
+   .demo{
+    overflow: scroll;
+   }
+     

@@ -1,0 +1,177 @@
+
+    .login {
+      background: linear-gradient(to bottom, #0099ff 0%, #fff 100%);
+      height: 100vh;
+      width: 100%;
+    
+    }
+    label
+    {
+        font: bold;
+        font-size: 20px;
+        font-family: arial black;
+        
+    }
+    input[type=text]:hover
+            {
+            border: 2px solid darkgrey;
+            
+           }
+    
+           input[type=submit]:hover
+            {
+            border: 2px solid       #0099ff 0%;
+            
+            
+           }
+     
+        input[type=password]:hover
+            {
+            border: 2px solid #fff;
+            
+           }
+    
+       input[type=date]:hover
+            {
+            border: 2px solid #fff;
+            
+           }
+    
+    
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0099ff;
+    }
+    
+    li {
+    float: left;
+    }
+    
+    li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 35px;
+    text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+    background-color:#e8f0e9;
+    }
+    
+    .active {
+    background-color: #e8f0e9;
+    }
+    
+    li a:hover
+    {
+    color: rgb(10, 8, 8);
+    
+    }
+    .btn1{
+        background-color: #e8f0e9;
+        margin-left: 900px;
+        padding:6px;
+        border: none;
+        margin-top: 6px;
+        
+    }
+
+    .account-login {
+        width: 500px;
+        }
+        .form-control:focus {
+        box-shadow: none;
+        }
+        p a {
+        padding-left: 2px;
+        }
+        .account-login h1 {
+        font-size: 25px;
+        text-align: left;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: 5px;
+        }
+        .login-form input {
+        width: 100%;
+        position: relative;
+        border-bottom: 1px solid #a39e9e;
+        padding: 0;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        box-shadow: none;
+        height: 63px;
+        border-radius: 0px;
+        }
+        .login-form {
+        background: #fff;
+        float: left;
+        width: 100%;
+        padding: 40px;
+        border-radius: 5px;
+        }
+        button.btn {
+        width: 100%;
+        background: #b9089c;
+        font-size: 20px;
+        padding: 11px;
+        color: #fff;
+        border: 0px;
+        margin: 10px 0px 20px;
+        }
+        .btn:hover{
+            color: #fff;
+            opacity: 0.8;
+        }
+        p {
+        float: left;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        }
+        .remember {
+        float: left;
+        width: 100%;
+        margin: 10px 0 0;
+        }
+        /* Customize the label (the container) */
+        .custom-checkbox {
+        display: block;
+        position: relative;
+        padding-left: 27px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 13px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font-weight: normal;
+        padding-top: 2px;
+        float: left;
+        }
+        
+        @media (max-width: 767px){
+        .account-login {
+            width: 90%;
+          }
+        }
+        
+        .err{
+            color: red;
+        }
+
+        .container{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            }
+        
+
+    

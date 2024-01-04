@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <head>
+        <title>Bootstrap 3 simple login form free template</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<div class="login">
+  
+    
+    <ul>
+      <li><a class="active" routerLink="/task-list">Task List</a></li>
+      <li><a routerLink="/task-chart">Task Chart</a></li>
+     <button class="btn1"  (click)="showTaskDetail()"> <mat-icon style="font-size:18px;color:rgb(39, 29, 179)">add_circle_outline</mat-icon>Create Task</button>
+    </ul>
+     <div *ngIf="showTask" class="container">
+        <div class="account-login">
+            <h1>Task Management</h1>
+            <form [formGroup]="taskForm" class="login-form">
+               <div class="form-group">
+                  <input type="text" required placeholder="Task Name" formControlName="taskName" class="form-control"> <br>
+                  <span class="err" *ngIf="taskForm.get('taskName')?.errors?.['maxlength']">
+                     Maximum 10 character's allowed</span>
+                     <span class="err" *ngIf="taskForm.get('taskName')?.errors?.['required']">
+                        Enter Task Name</span>
+                 <span class="err" *ngIf="taskForm.get('taskName')?.errors?.['minlength']">
+                     Minimum 5 characters are required </span>
+                 <span class="err" *ngIf=" !taskForm.get('taskName')?.errors?.['maxlength'] 
+              && !taskForm.get('taskName')?.errors?.['minlength']
+              && taskForm.get('taskName')?.errors?.['pattern']">
+                     Enter only Alphabets
+                 </span>
+                 <br>
+               </div>
+               <input type="text" required placeholder="Discription" formControlName="Discription" class="form-control"> <br>
+               <span class="err" *ngIf="taskForm.get('Discription')?.errors?.['maxlength']">
+                  Maximum 20 character's allowed</span>
+              <span class="err" *ngIf="taskForm.get('Discription')?.errors?.['minlength']">
+                  Minimum 5 characters are required </span>
+                  <span class="err" *ngIf="taskForm.get('Discription')?.errors?.['required']">
+                    Enter Task Discription</span>
+              <span class="err" *ngIf=" !taskForm.get('Discription')?.errors?.['maxlength'] 
+           && !taskForm.get('Discription')?.errors?.['minlength']
+           && taskForm.get('Discription')?.errors?.['pattern']">
+                  Enter only Alphabets
+              </span>
+              <br>
+            
+            <input type="date" required formControlName="Date" class="form-control"> <br>
+            
+           <br>
+        
+               
+               <button *ngIf="showBtn" class="btn" (click)="Task()">Create Task</button>
+               <button class="btn" *ngIf="!showBtn"  (click)="Update()">Update Task</button>
+            </form>
+         </div>
+    
+    

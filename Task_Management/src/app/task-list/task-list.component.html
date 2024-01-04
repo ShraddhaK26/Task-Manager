@@ -1,0 +1,41 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<div class="background">
+  <div>
+    <span class="material-icons" (click)="backbtn()" class="material-icons" style="font-size:35px;color:rgb(17, 17, 16)">arrow_back</span>
+    <h1 class="title">Task List</h1>
+    <input type="search" class="search" placeholder="search"  [(ngModel)]="searchText">
+    
+    <mat-icon class="searchicon">search</mat-icon>
+  </div>
+  <br>
+    <Div class="container" >
+     
+        <br>
+        <div class="demo">
+      <table>
+       
+        <tr>
+            <th>Task Name</th>
+            <th>Discription</th>
+            <th>Date</th>
+            <th>Action</th>
+          </tr> 
+          <br>
+          
+           <tr *ngFor="let data of TaskData | search : searchText">
+            <td>{{data.taskName}}</td>
+            <td>{{data.Discription}}</td>
+            <td>{{data.Date}}</td>
+            <td><i class="fa fa-edit" (click)="edit(data.id)" style="font-size:24px;color:rgb(243, 220, 18)"></i>
+             
+              <mat-icon (click)="delete(data.id)" style="font-size:24px;color:rgb(216, 20, 20)">delete</mat-icon></td>
+          </tr>
+        
+          
+      </table> 
+      </div>
+    </Div>
+</div>
