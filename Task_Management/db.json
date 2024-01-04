@@ -3,7 +3,7 @@
     {
       "taskName": "Learn C#",
       "Discription": "start to learn C#",
-      "Date": "2024-01-11",
+      "Date": "2024-01-09",
       "id": 1
     },
     {
@@ -41,6 +41,30 @@
       "Discription": "asda",
       "Date": "2024-01-11",
       "id": 7
+    },
+    {
+      "taskName": "Angular Apicallda",
+      "Discription": "get,post,delete,patch",
+      "Date": "2024-01-12",
+      "id": 8
+    },
+    {
+      "taskName": "Angular Material",
+      "Discription": "using Angular Material",
+      "Date": "2024-01-6",
+      "id": 9
+    },
+    {
+      "taskName": "Learn CPP",
+      "Discription": "start learning CPP",
+      "Date": "2024-01-11",
+      "id": 10
+    },
+    {
+      "taskName": "Apex-Chart",
+      "Discription": "Create to Apex-Chart",
+      "Date": "2024-01-16",
+      "id": 11
     }
   ]
 }
